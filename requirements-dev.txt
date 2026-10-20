@@ -1,0 +1,3 @@
+-r tool/requirements.txt
+pytest>=7
+pyflakes>=3

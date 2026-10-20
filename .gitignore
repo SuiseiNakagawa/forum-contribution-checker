@@ -1,0 +1,16 @@
+# Student data: transcripts, rankings, ratings and saved class files never go in git.
+results/*
+!results/.keep
+forum_class_*.json
+ratings_class_*.csv
+data/
+out/
+
+# Local environment and caches
+tool/.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+
+# Superseded early prototypes (kept locally, not part of the published tool)
+advanced/

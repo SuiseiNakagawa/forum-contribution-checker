@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forum contributions button</title>
+<style>
+  :root { --bg:#f5f5f7; --card:#fff; --ink:#1d1d1f; --mute:#6e6e73; --line:#d2d2d7; --accent:#0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161617; --card:#1f1f21; --ink:#f5f5f7; --mute:#a1a1a6; --line:#3a3a3c; --accent:#8ab4f8; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  main { max-width:640px; margin:48px auto; padding:0 16px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  .lead { color:var(--mute); margin:0 0 28px; }
+  ol { padding:0; margin:0; list-style:none; counter-reset:s; }
+  li { counter-increment:s; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px 18px 60px; margin:0 0 12px; position:relative; }
+  li::before { content:counter(s); position:absolute; left:20px; top:18px; width:26px; height:26px; border-radius:50%; background:var(--accent); color:var(--card); font-weight:600; font-size:14px; display:grid; place-items:center; }
+  li b { display:block; margin-bottom:4px; }
+  kbd { font:13px ui-monospace,Menlo,monospace; border:1px solid var(--line); border-bottom-width:2px; border-radius:5px; padding:1px 6px; }
+  .btn { display:inline-block; margin:10px 0 4px; padding:10px 18px; border-radius:10px; background:var(--accent); color:var(--card); font-weight:600; text-decoration:none; cursor:grab; }
+  .small { color:var(--mute); font-size:14px; margin:6px 0 0; }
+  .note { margin-top:24px; color:var(--mute); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Forum contributions button</h1>
+  <p class="lead">A one-click button for the grader view in Forum. It lists every student speaking turn in a class. Click one and the class video jumps to that moment.</p>
+  <ol>
+    <li><b>Show your bookmarks bar</b>
+      Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (Chrome and Safari).</li>
+    <li><b>Drag this button onto the bookmarks bar</b>
+      <a class="btn" href="{{HREF}}" onclick="event.preventDefault(); alert('Drag me to your bookmarks bar instead of clicking.');">Forum contributions</a>
+      <p class="small">Can't drag it? Right-click the button, choose "Copy Link", then add a new bookmark and paste the link as its address.</p></li>
+    <li><b>Use it in Forum</b>
+      Open a class, go to <b>Assess Class</b> &rarr; <b>Video</b>, and click the bookmark. A panel appears. Click any turn to jump there. Drag the panel by its title to move it, or click the bookmark again to close it.</li>
+    <li><b>Want transcripts?</b>
+      In the panel, click <b>Save for transcription</b>, then double-click <b>Transcribe class</b> in the
+      forum-contribution-checker folder. The first run sets itself up, which takes a few minutes.</li>
+  </ol>
+  <p class="note">The button runs in your own browser with your Forum login and only reads the class's event log (who spoke when). Nothing is saved or sent anywhere. If clicking it does nothing in Safari, try Chrome.</p>
+</main>
+</body>
+</html>

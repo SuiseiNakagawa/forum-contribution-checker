@@ -1,0 +1,45 @@
+# Example "bookkeeping" sentences: talk that manages the conversation rather
+# than contributing content. A sentence in a student's turn that is close in
+# meaning to any of these (and adds few new content words) is greyed out.
+# Edit freely: one phrase per line, lines starting with # are ignored.
+# Then double-click "Transcribe class" again; it re-analyses without re-transcribing.
+
+# audio / technical
+Can you hear me?
+Sorry, I was on mute.
+Sorry, my internet cut out.
+Is my audio okay?
+Sorry, can you hear me now?
+
+# checking the question
+Just to make sure I understand the question.
+So you're asking whether this is right?
+Sorry, can you repeat the question?
+Sorry, what was the question again?
+I'm not sure if I understood the question correctly.
+Do you mean the first one or the second one?
+Wait, which part are we talking about?
+
+# warming up / hedging
+Yeah, so, um, I think, like.
+Okay, so basically.
+I guess I would say.
+I don't really know, but.
+Let me think for a second.
+I'm not sure if this is right, but.
+
+# agreeing / handing off / wrapping up
+I agree with what she said.
+Yeah, I think that's right.
+I was going to say the same thing.
+That's all I wanted to say.
+Yeah, that's it.
+Does that make sense?
+Thank you.
+Yeah, exactly.
+
+# turn-taking
+Can I go next?
+Oh sorry, go ahead.
+I think it's my turn.
+Sorry, I didn't mean to interrupt.
